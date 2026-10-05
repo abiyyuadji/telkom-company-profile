@@ -18,7 +18,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
     <title><?= htmlspecialchars($pageTitle) ?></title> 
 
-    <link rel="stylesheet" href="assets/css/style.css"> 
+    <link rel="stylesheet" href="/telkom-company-profile/assets/css/style.css">
 
 </head> 
 
@@ -60,4 +60,4 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
 </header> 
 
-<main>
+<main> 

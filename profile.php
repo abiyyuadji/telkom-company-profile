@@ -1,37 +1,48 @@
-<?php 
+<?php
+$pageTitle = 'Profil - Telkom University';
+require 'includes/header.php';
+?>
 
-$pageTitle = 'Profil - Telkom University'; 
+<section class="section">
+    <div class="container article-body">
 
-require 'includes/header.php'; 
+        <span class="eyebrow">Profil</span>
 
-?> 
+        <h1>Tentang proyek simulasi Telkom University</h1>
 
-<section class="section"> 
+        <p class="lead">
+            Halaman ini digunakan untuk mempraktikkan struktur halaman PHP
+            yang memakai header dan footer bersama.
+        </p>
 
-    <div class="container article-body"> 
+        <h2>Visi pembelajaran</h2>
 
-        <span class="eyebrow">Profil</span> 
+        <p>
+            Mahasiswa memahami hubungan antarmuka web, logika PHP,
+            basis data, dan version control melalui satu proyek terpadu.
+        </p>
 
-        <h1>Tentang proyek simulasi Telkom University</h1> 
+        <h2>Tujuan proyek</h2>
 
-        <p class="lead">Halaman ini digunakan untuk mempraktikkan struktur halaman PHP yang memakai header dan footer bersama.</p> 
+        <p>
+            Proyek menampilkan profil, program studi, berita, serta formulir kontak.
+            Data program studi dan berita dibaca dari database, sedangkan pesan pengguna
+            disimpan menggunakan prepared statement.
+        </p>
 
-        <h2>Visi pembelajaran</h2> 
+        <h2>Fokus Pembelajaran</h2>
 
-        <p>Mahasiswa memahami hubungan antarmuka web, logika PHP, basis data, dan version control melalui satu proyek terpadu.</p> 
+        <ul>
+            <li>Memahami pengembangan website menggunakan PHP Native.</li>
+            <li>Menghubungkan website dengan database MySQL/MariaDB.</li>
+            <li>Menerapkan Git dan GitHub untuk version control.</li>
+        </ul>
 
-        <h2>Tujuan proyek</h2> 
+        <div class="alert alert-success">
+            Konten institusi pada website ini bersifat simulasi untuk keperluan praktikum.
+        </div>
 
-        <p>Proyek menampilkan profil, program studi, berita, serta formulir kontak. Data program studi dan berita dibaca dari database, sedangkan pesan pengguna disimpan menggunakan prepared statement.</p> 
+    </div>
+</section>
 
-        <div class="alert alert-success">Konten institusi pada website ini bersifat simulasi untuk keperluan praktikum.</div> 
-
-    </div> 
-
-</section> 
-
-<?php require 'includes/footer.php'; ?> 
-
- 
-
- 
+<?php require 'includes/footer.php'; ?>

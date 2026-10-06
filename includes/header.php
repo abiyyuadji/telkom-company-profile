@@ -1,63 +1,75 @@
-<?php 
+<?php
+$pageTitle = $pageTitle ?? 'Telkom University - Praktikum Web';
+$currentPage = basename($_SERVER['PHP_SELF']);
+?>
 
-$pageTitle = $pageTitle ?? 'Telkom University - Praktikum Web'; 
+<!doctype html>
+<html lang="id">
 
-$currentPage = basename($_SERVER['PHP_SELF']); 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-?> 
-
-<!doctype html> 
-
-<html lang="id"> 
-
-<head> 
-
-    <meta charset="utf-8"> 
-
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-
-    <title><?= htmlspecialchars($pageTitle) ?></title> 
+    <title><?= htmlspecialchars($pageTitle) ?></title>
 
     <link rel="stylesheet" href="/telkom-company-profile/assets/css/style.css">
+</head>
 
-</head> 
+<body>
 
-<body> 
+<header class="site-header">
 
-<header class="site-header"> 
+    <div class="container nav-wrap">
 
-    <div class="container nav-wrap"> 
+        <a class="brand" href="/telkom-company-profile/index.php">
 
-        <a class="brand" href="index.php"> 
+            <span class="brand-mark">
+                TU
+            </span>
 
-            <span class="brand-mark">TU</span> 
+            <span>
+                <strong>Telkom University</strong>
+                <small>Simulasi Company Profile</small>
+            </span>
 
-            <span> 
+        </a>
 
-                <strong>Telkom University</strong> 
+        <nav class="main-nav" aria-label="Navigasi utama">
 
-                <small>Simulasi Company Profile</small> 
+            <a
+                class="<?= $currentPage === 'index.php' ? 'active' : '' ?>"
+                href="/telkom-company-profile/index.php">
+                Beranda
+            </a>
 
-            </span> 
+            <a
+                class="<?= $currentPage === 'profile.php' ? 'active' : '' ?>"
+                href="/telkom-company-profile/profile.php">
+                Profil
+            </a>
 
-        </a> 
+            <a
+                class="<?= $currentPage === 'programs.php' ? 'active' : '' ?>"
+                href="/telkom-company-profile/programs.php">
+                Program Studi
+            </a>
 
-        <nav class="main-nav" aria-label="Navigasi utama"> 
+            <a
+                class="<?= in_array($currentPage, ['news.php', 'news_detail.php']) ? 'active' : '' ?>"
+                href="/telkom-company-profile/news.php">
+                Berita
+            </a>
 
-            <a class="<?= $currentPage === 'index.php' ? 'active' : '' ?>" href="index.php">Beranda</a> 
+            <a
+                class="<?= $currentPage === 'contact.php' ? 'active' : '' ?>"
+                href="/telkom-company-profile/contact.php">
+                Kontak
+            </a>
 
-            <a class="<?= $currentPage === 'profile.php' ? 'active' : '' ?>" href="profile.php">Profil</a> 
+        </nav>
 
-            <a class="<?= $currentPage === 'programs.php' ? 'active' : '' ?>" href="programs.php">Program Studi</a> 
+    </div>
 
-            <a class="<?= in_array($currentPage, ['news.php', 'news_detail.php']) ? 'active' : '' ?>" href="news.php">Berita</a> 
+</header>
 
-            <a class="<?= $currentPage === 'contact.php' ? 'active' : '' ?>" href="contact.php">Kontak</a> 
-
-        </nav> 
-
-    </div> 
-
-</header> 
-
-<main> 
+<main>

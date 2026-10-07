@@ -45,7 +45,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
             <a
                 class="<?= $currentPage === 'profile.php' ? 'active' : '' ?>"
                 href="/telkom-company-profile/profile.php">
-                Profil
+                Tentang Kami
             </a>
 
             <a
